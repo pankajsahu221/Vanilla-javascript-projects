@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background:rgb(245, 254, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 45vh;
+    text-transform: capitalize;
+}
+
+h4{
+    letter-spacing: 1.8px;
+    font-family: 'Roboto Mono', monospace;
+}
+.menu{
+    padding:5rem 0;
+    /*
+    background: rgb(146, 218, 247);
+    */
+}
+.title{
+    font-family: 'Jost', sans-serif;
+    font-size: 2.8vh;
+    text-align: center;
+    letter-spacing: 2.3px;
+    margin-bottom: 2rem;
+}
+.btn-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 2vh;
+}
+.filter-btns{
+    color: rgba(182, 88, 26, 0.651) ;
+    background:white;
+    padding:0.8vh 2vh 0.8vh 2vh;
+    border:1px solid rgba(182, 88, 26, 0.651);
+    margin:0.7vh;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    font-size: 2vh;
+    outline:none;
+    transition: 0.5s all ease;
+}
+.filter-btns:hover{
+    color:white;
+    background: rgba(182, 88, 26, 0.651);
+    transition:0.5s all ease;
+}
+.section-center{
+    padding:2vh;    
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    gap: 3rem 4rem;
+    justify-items: center;
+}
+.menu-item{
+    /*
+    background: pink;
+    */
+    display:grid;
+    max-width: 19.279rem;
+}
+.photo{
+   object-fit: cover; 
+   height: 150px;
+   border: 0.25rem solid rgba(182, 88, 26, 0.651);
+   border-radius: 4px;
+   
+}
+.item-info header{
+    display: flex;
+    padding-left:1vh;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgba(182, 88, 26, 0.651);
+}
+.item-info h4 {
+    margin-bottom: 0.5rem;
+} 
+.price{
+    color:rgba(182, 88, 26, 0.651);
+}
+.item-text{
+    padding-top: 1rem;
+    padding-left: 1vh;
+    font-size:1.8vh;
+    color:rgb(90, 90, 90);
+    font-family: 'Roboto', sans-serif;
+}
+@media screen and (min-width: 800px) {
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.75rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    body {
+      font-size: 1rem;
+    }
+    h1,h2,h3,h4{
+      line-height: 1;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .menu-item {
+        grid-template-columns: 225px 1fr;
+        gap:0 1.25rem;
+        max-width: 40rem;
+    } 
+    .photo {
+      height: 120px;
+    }
+  }
+  @media screen and (min-width: 1200px){
+    .section-center {
+      width: 95vw;
+      grid-template-columns: 1fr 1fr;
+    }
+    .photo {
+      height: 100px;
+    }
+  }
+  /*
+  
+    .section-center{
+        width: 90vw;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu-item {
+        grid-template-columns: 225px 1fr;
+        gap: 0 1.2rem;
+        max-width: 40rem;
+      }
