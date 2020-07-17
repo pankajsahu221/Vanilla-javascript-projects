@@ -21,6 +21,8 @@ about.addEventListener("click",function(e){
         articles.forEach(function(article){
             article.classList.remove("active")
         });
+        
+        //adding active status to the article
         const element = document.getElementById(id);
         element.classList.add("active");
     }
