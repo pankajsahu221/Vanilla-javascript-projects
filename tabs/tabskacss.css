@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{      
+    text-transform: capitalize;
+    background: rgb(238, 252, 255);
+    display: flex;
+    
+    font-family: 'Raleway', sans-serif;
+    justify-content: center;
+    align-items: center; 
+}
+.section-center{
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/* about */
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.title p {
+  width: 80%;
+  margin: 0 auto;
+}
+.about-img {
+  margin-bottom: 2rem;
+}
+.about-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  border-radius: 5px;
+  object-fit: cover;
+  height: 20rem;
+  width:25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+  .title {
+    margin-bottom: 4rem;
+  }
+  .about-img {
+    margin-bottom: 0;
+  }
+  .about-img img {
+    height: 20rem;
+    width:24rem;
+  }
+  .about-center {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+.about{
+  background: white;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  margin-bottom: 2rem;
+}
+.btn-container {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.tab-btn {
+   float: left;   /* we could also use display:inline-block;  */
+  padding: 1rem 0;
+  border: none;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  background: rgb(182, 182, 182);
+  cursor: pointer;
+  width:33.33433333333%;
+  transition:all 0.4s ease;
+  letter-spacing: var(--spacing);
+}
+.tab-btn:hover:not(.active) {
+  background: white;
+  color: rgb(255, 206, 143);
+  transition:all 0.4s ease;
+}
+.tab-btn:nth-child(1){
+  border-top-left-radius: 6px;
+}
+.tab-btn:nth-child(3){
+  border-top-right-radius: 6px;
+}
+.about-content {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 2rem 1.5rem;
+}
+/* hide content */
+.content {
+  display: none;
+}
+.tab-btn.active {     /* don't leave space b/w .tab-btn and .active   */
+  background: white;
+}
+.content.active {
+  display: block;
+}
+
+
+/* WORDS */
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+h1,h2,h3,h4 {
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 0.875rem;
+  }
+  p{
+    font-size: 0.95rem; 
+    word-spacing: 1.5px;
+    letter-spacing: 0.7px;
+    color: var(--clr-grey-5);
+  }
+
+@media screen and (min-width: 850px){ 
+    h1 {
+      font-size: 2.5rem;
+      word-spacing: 2px;
+      letter-spacing: 1px;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    h4 {
+      font-size: 1.2rem;
+    }
+    p {
+        color:rgb(75, 75, 75);
+        line-height: 1.3;
+    }
+    body {
+      font-size: 0.95rem;
+    }
+    h1,h2,h3,h4 {
+      line-height: 1;
+    }
+  }
