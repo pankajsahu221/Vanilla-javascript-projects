@@ -48,13 +48,6 @@ header {
   color:rgb(255, 190, 146);
   transition: all 0.28s ease;
 }
-.banner {
-    min-height: 80vh;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    align-items: center;
-}
 .links-container{
     /* display: none; */
     height:0;
@@ -97,9 +90,15 @@ header {
 .fixed-navbar .links a:hover {
   color: rgb(146, 233, 255);
 }
-
+.banner {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  align-items: center;
+}
 .container{
-    position: relative;
+    margin: 16% 18% 0 18%;
+  
     font-family: 'Raleway', sans-serif;
     word-spacing: 3px;
     letter-spacing: 3px;
@@ -107,8 +106,8 @@ header {
     background: rgba(0, 0, 0, 0.13);
     color:white;
     border:0.5px solid rgba(255, 255, 255, 0.829);
-    width: 55%;
-    height: 37%;
+    /* width: 55%; */
+    /*height: 37%; */
 }
 .desc{
   padding-bottom: 2vh;
@@ -244,10 +243,10 @@ p{
     padding: 0;
     transition:all 0.3s ease;
   }
-  .container{
+  /* .container{
       height: 25%;
-      width: 38%;
-  }
+      width: 38%; 
+  } */
   .btn-white{
       padding:1vh 2vh 1vh 2vh;
   }
