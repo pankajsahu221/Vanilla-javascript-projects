@@ -49,15 +49,22 @@ toggle.addEventListener("click",function(){
      }
 });
 
-//fixing the postion of landing of navbar bar in scrolling down to current location
+//fixing the postion of landing of navbar bar in scrolling down to current clicked location
 const scrollLink = document.querySelectorAll(".scroll-link");
 
 scrollLink.forEach(function(link){
-    link.addEventListener("click",function(e){
+    link.addEventListener("click", perfScroll);
+});
+
+const btnWhite = document.querySelector(".btn-white");
+btnWhite.addEventListener("click", perfScroll);
+
+function perfScroll(e){
          
         //prevent the action to be performed
         e.preventDefault();
 
+        // used slice(0) to remove the "#" from the attribute
         const id = e.currentTarget.getAttribute("href").slice(1);
         //console.log(id)  prints '#tours','#serivces' etc and after doing slice(1) we get 'services','tours' etc
         const element = document.getElementById(id);
@@ -68,7 +75,8 @@ scrollLink.forEach(function(link){
         const navHeight = navbar.getBoundingClientRect().height;
         let correctPosition = element.offsetTop - navHeight;
         
-        // console.log(navHeight);
+        // console.log(navHeight);  
+        //if the link container is open
         if(navHeight >  71 ){       //71 is the size of the nav header
             correctPosition = correctPosition + containerHeight
         }
@@ -81,5 +89,4 @@ scrollLink.forEach(function(link){
 
         //close the link container after clicking to the link
         linksContainer.style.height=0;
-    })
-})
+}
