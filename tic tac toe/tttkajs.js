@@ -35,9 +35,9 @@ function start(){
     winMsg.classList.remove("show");
 }    
 
-cellElements.forEach(function(cell){
-    cell.addEventListener("click", cellClick , { once: true } );
-});
+// cellElements.forEach(function(cell){
+//     cell.addEventListener("click", cellClick , { once: true } );
+// });
 
 
 function cellClick(e){
