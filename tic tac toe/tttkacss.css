@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin:0;
+}
+.board{
+    width: 30vh;
+    height:30vh;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    margin:0 auto;
+    margin-top: 13rem;
+}
+
+.cell{
+    width:65px;
+    height: 65px;
+    background: white;
+    border:0.8px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3){
+    border-top:none;
+}
+.cell:nth-child(3n + 1){
+    border-left: none;
+}
+.cell:nth-child(3n + 3){
+    border-right: none;
+}
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9){
+    border-bottom:none;
+}
+
+.cell.x:hover,
+.cell.circle:hover{
+    cursor: not-allowed;
+}
+/* making cross X  */
+.cell.x::before,
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after{
+    content: "";
+    background: black;
+    width:8px;
+    height:52px;
+    position: absolute;   
+}
+.cell.x::before,
+.board.x .cell:not(.x):not(.circle)::before{
+    transform: rotate(45deg);
+}
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle)::after{
+    transform: rotate(-45deg);
+}
+
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after,
+.board.circle .cell:not(.x):not(.circle):hover::before{
+    background: rgb(212, 212, 212);
+}
+/* making circle O */
+
+.cell.circle::before{
+    background: black;
+}
+.cell.circle::before,
+.cell.circle::after,
+.board.circle .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after{
+    content: "";
+    position: absolute; 
+    border-radius: 50%;  
+}
+.cell.circle::before,
+.board.circle .cell:not(.x):not(.circle):hover::before{
+    width:52px;
+    height:52px;
+}
+.cell.circle::after,
+.board.circle .cell:not(.x):not(.circle):hover::after{
+    width: 42px;
+    height:42px;
+    background: white;
+}
+
+/* winning message  */
+.win-msg{
+    display: none;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.877);
+
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4rem;
+    color: white;
+    flex-direction: column;
+}
+.win-msg.show{
+    display: flex;
+}
+.win-msg button{
+    font-family: 'Josefin Sans', sans-serif;
+    background: white;
+    font-size: 2rem;
+    padding:1vh 2vh 1vh 2vh;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.win-msg button:hover{
+    background: black;
+    color:white;
+    border:1px solid white;
+}
