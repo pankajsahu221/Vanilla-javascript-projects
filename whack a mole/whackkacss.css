@@ -5,7 +5,6 @@
 body{
     background: rgb(233, 255, 237);
     font-family: 'Josefin Sans', sans-serif;
-   
     align-items: center;
     justify-content: center;
 }
@@ -56,7 +55,7 @@ body{
     flex-wrap: wrap;  /*we could have used display:grid; grid-template-columns:repeat(3,auto); */
 }
 .hole{
-    flex: 1 1 33.33%;    /*flex: grow shrink box-size ; */
+    flex: 1 0 33.33%;    /*flex: grow shrink box-size ; */
     overflow: hidden;    /*if we comment this then,we can see the moles*/ 
     position: relative;
 }
@@ -67,17 +66,17 @@ body{
     background: url('images/mud.png');
     background-size: cover;
     width:100%;
-    height:70px;
+    height:60px;
     bottom:0;
 }
 .mole{
     background: url('images/mole.png');
     background-size: cover;
     position: absolute;
-    width:70%;
+    width:85%;
     height:70%;
     top:100%;
-    left: 15%;
+    left: 7%;
     bottom:21%;
     cursor: pointer;
     transition: all 0.4s ;
@@ -89,5 +88,12 @@ body{
 @media screen and (min-width:601px){
     .game{
         width:600px;
+    }
+    .mole{   
+        left:15%; 
+        width:70%;
+    }
+    .hole:after{
+        height:70px;
     }
 }
