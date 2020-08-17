@@ -1,3 +1,5 @@
+// to get more detail how skycon works proceed to the link
+// https://darkskyapp.github.io/skycons/
 window.addEventListener("load",function(){
 let long;
 let lat;
