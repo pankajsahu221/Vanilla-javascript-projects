@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <!-- fits the screen according to the device's width and height -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--to add favicon(logo in side of title)  -->
+  <link rel="icon" href="img/astronaut.jpg" type="image/png">
+
+  <meta charset="utf-8">
+
+  <title>NASA APoD</title>
+  <meta name="description" content="scroll">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <!--   font-family: 'Raleway', sans-serif;    -->
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+  <!-- font-family: 'Ubuntu Condensed', sans-serif; -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+  <!-- font-family: 'Josefin Sans', sans-serif; -->
+  
+  <!-- simple text to <p> -->
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap" rel="stylesheet">
+  <!-- font-family: 'Hind Madurai', sans-serif; -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+    <div class="section-center">
+        <h1 class="nasa-title">NASA API Info.</h1>
+        <hr id="underline">
+        <h2>Date: <span class="date"></span></h2>
+        <h2>Picture of the day</h2>
+    </div>
+    <div class="img-cont">
+       <!-- <img src="" class="nasa-img" alt="space photograph"> -->
+       <iframe class="nasa-vid"
+          src="">
+        </iframe>
+        <img src="" class="nasa-img" alt="space photograph">
+
+       <h3 class="img-title"></h3>
+       <p class="img-desc">Loading...</p>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
