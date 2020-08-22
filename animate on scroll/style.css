@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    background: rgb(233, 242, 255);
+}
+.upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 55vh;
+}
+.title{
+    color: rgb(124, 38, 38);
+    font-size: 2.4rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    overflow: auto;
+    /* background: red; */
+    max-width: 800px;
+}
+.card{
+    display: grid;
+    background: white;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1.5rem;
+    margin: 1rem auto;
+}
+.card:nth-child(even) img{
+    order: 2;  /*for making 1st img left and then 2nd img right and so on*/
+}
+.info{
+    padding: 0.3rem;
+}
+.info-img{
+    max-height: 400px;
+    height: auto;
+    width: 100%;
+}
+@media screen and (max-width:850px){
+    .info-img{
+        min-height: 240px;
+        height: auto;
+    }
+}
+.info-title{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.info-desc{
+    line-height: 1.24;
+}
+.btn{
+    color:white;
+    background: black;
+    text-decoration: none;
+    padding: 0.7rem 0.5rem;
+    margin: 1rem auto;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.btn:hover{
+    color:black;
+    background: white;
+    border: 0.5px solid black;
+    transition: all 0.5s ease;
+}
+@media screen and (max-width:600px){
+    .card{
+        display: block;
+        /* we could also use these two lines instead of the above line */
+        /* display: flex;
+        flex-direction: column; */
+        
+        grid-gap: 0.3rem;
+    }
+    html{
+        font-size: 85%;
+    }
+    .info-desc{
+        font-size: 1.28rem;
+    }
+}
