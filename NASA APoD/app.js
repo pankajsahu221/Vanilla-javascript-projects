@@ -6,7 +6,7 @@ window.addEventListener("load",function(){
     const imgDesc = document.querySelector(".img-desc");
  
     
- const api= "https://api.nasa.gov/planetary/apod?api_key=jIB7iMgD1MxCrXhFuH6eBpayJhvJLdd3JuRvEYAf" ; 
+ const api= "your API key here" ; 
 
  fetch(api)
     .then(function(response){
