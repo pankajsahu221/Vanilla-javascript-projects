@@ -1,0 +1,140 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <!-- fits the screen according to the device's width and height -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--to add favicon(logo in side of title)  -->
+  <!-- <link rel="icon" href="weatherpng.png" type="image/png"> -->
+
+  <meta charset="utf-8">
+
+  <title>animate on scroll</title>
+  <meta name="description" content="scroll">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- animate on scroll aos library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <!--   font-family: 'Raleway', sans-serif;    -->
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+  <!-- font-family: 'Ubuntu Condensed', sans-serif; -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+  <!-- font-family: 'Josefin Sans', sans-serif; -->
+  
+  <!-- simple text to <p> -->
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap" rel="stylesheet">
+  <!-- font-family: 'Hind Madurai', sans-serif; -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+   <div class="upper">
+      <h2 class="title">Animate on scroll</h2>
+   </div>
+   <div class="container">
+      
+        <div class="card">
+          <img class="info-img" src="img/paint-1.png">
+          <div class="info">
+            <h4 class="info-title">Paint 1</h4>
+            <p class="info-desc">
+              Painting is the practice of applying paint, pigment, color or other
+              medium to a solid surface (called the "matrix" or "support").
+              The medium is commonly applied to the base with a brush, but other
+              implements, such as knives, sponges, and airbrushes, can be used.
+            </p>
+            <button class="btn">Buy Now</button>
+          </div>
+
+        </div>
+        <div class="card" data-aos="fade-left">
+          <img class="info-img" src="img/paint-2.png">
+          <div class="info">
+            <h4 class="info-title">Paint 2</h4>
+            <p class="info-desc">
+            Painting is the practice of applying paint, pigment, color or other
+            medium to a solid surface (called the "matrix" or "support").
+            The medium is commonly applied to the base with a brush, but other
+            implements, such as knives, sponges, and airbrushes, can be used.
+            </p>
+            <button class="btn">Buy Now</button>
+          </div>
+
+      </div>
+          <div class="card" data-aos="fade-right">
+            <img class="info-img" src="img/paint-3.jpg">
+            <div class="info">
+              <h4 class="info-title">Paint 3</h4>
+              <p class="info-desc">
+              Painting is the practice of applying paint, pigment, color or other
+              medium to a solid surface (called the "matrix" or "support").
+              The medium is commonly applied to the base with a brush, but other
+              implements, such as knives, sponges, and airbrushes, can be used.
+              </p>
+              <button class="btn">Buy Now</button>
+            </div>
+
+        </div>
+        <div class="card" data-aos="fade-left">
+          <img class="info-img" src="img/paint-4.jpg">
+          <div class="info">
+            <h4 class="info-title">Paint 4</h4>
+            <p class="info-desc">
+            Painting is the practice of applying paint, pigment, color or other
+            medium to a solid surface (called the "matrix" or "support").
+            The medium is commonly applied to the base with a brush, but other
+            implements, such as knives, sponges, and airbrushes, can be used.
+            </p>
+            <button class="btn">Buy Now</button>
+          </div>
+
+      </div>
+      <div class="card" data-aos="fade-right">
+        <img class="info-img" src="img/paint-5.jpg">
+        <div class="info">
+          <h4 class="info-title">Paint 5</h4>
+          <p class="info-desc">
+          Painting is the practice of applying paint, pigment, color or other
+          medium to a solid surface (called the "matrix" or "support").
+          The medium is commonly applied to the base with a brush, but other
+          implements, such as knives, sponges, and airbrushes, can be used.
+          </p>
+          <button class="btn">Buy Now</button>
+        </div>
+
+      </div>
+      <div class="card" data-aos="fade-left">
+        <img class="info-img" src="img/paint-6.jpg">
+        <div class="info">
+          <h4 class="info-title">Paint 6</h4>
+          <p class="info-desc">
+          Painting is the practice of applying paint, pigment, color or other
+          medium to a solid surface (called the "matrix" or "support").
+          The medium is commonly applied to the base with a brush, but other
+          implements, such as knives, sponges, and airbrushes, can be used.
+          </p>
+          <button class="btn">Buy Now</button>
+        </div>
+
+      </div>
+   </div>
+        
+
+    <script src="app.js"></script>
+
+    <!-- animate on scroll aos library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset:300,
+          duration:700,
+      });
+    </script> 
+
+  </body>
+</html>
