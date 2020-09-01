@@ -3,8 +3,8 @@ const searchResult = document.querySelector(".search-result");
 const searchBtn = document.querySelector(".search-btn");
 const app = document.querySelector(".app");
 let searchQuery = '';
-const apiID = '9139cdbf' ; 
-const api = '2d872fd3a40edd4fdefce65f053fe5c2' ;
+const apiID = 'YOUR_API_ID' ; 
+const api = 'YOUR_API_KEY' ;
 
 
 searchForm.addEventListener("submit",function(e){
