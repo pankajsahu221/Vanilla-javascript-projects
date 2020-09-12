@@ -1,5 +1,5 @@
-A simple JS project to play whack a mole game and has a feature of high score using local storage...
+A simple JS game to play whack a mole and has a feature to store high score using local storage...
 
-Wanna Play the Game 
+Wanna Play the Game
 
 https://jovial-spence-780997.netlify.app/
